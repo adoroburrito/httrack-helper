@@ -8,6 +8,12 @@ Overall what this does is: generate a bunch of ready to be used httrack commands
 
 httrack filters have annoying syntax and I'm lazy
 
+## (WIP) Usage
+
+the code is pretty self explanatory, but I'll revisit this later
+
+overall, you place sites on the `sites` object and it will generate a big command line for each site placed in there, allowing the files set in the `defaultAllowed` array 
+
 ## How I use it
 
 for now I'm using it with:
