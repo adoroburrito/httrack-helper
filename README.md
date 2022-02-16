@@ -12,7 +12,7 @@ httrack filters have annoying syntax and I'm lazy
 
 the code is pretty self explanatory, but I'll revisit this later
 
-overall, you place sites on the `sites` object and it will generate a big command line for each site placed in there, allowing the files set in the `defaultAllowed` array 
+overall, you place sites on the `sites` object and it will generate a big command for each site placed in there (on its own line), allowing the files set in the `defaultAllowed` array 
 
 ## How I use it
 
