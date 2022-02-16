@@ -6,13 +6,24 @@ Overall what this does is: generate a bunch of ready to be used httrack commands
 
 # Motivation
 
-httrack filters have annoying syntax and I'm lazy
+I'm trying to use httrack to download a bunch of doc files but httrack filters have annoying syntax and I'm lazy
 
 ## (WIP) Usage
 
 the code is pretty self explanatory, but I'll revisit this later
 
 overall, you place sites on the `sites` object and it will generate a big command for each site placed in there (on its own line), allowing the files set in the `defaultAllowed` array 
+
+output looks something like this (without the extra blank line breaks):
+```bash
+httrack https://developer.mozilla.org/en-US/docs/Web/JavaScript -O ~/documentation-files/mozilla.org "+*.mozilla.org/**/*.html" "+*.mozilla.org/**/*.css" "+*.mozilla.org/**/*.js" "+*.mozilla.org/**/*.map.js" "+*.mozilla.org/**/*.map.css" "+*.mozilla.org/**/*.woff" "+*.mozilla.org/**/*.woff2"
+
+httrack https://doc.rust-lang.org/book/ -O ~/documentation-files/rust-book "+*.rust-lang.org/**/*.html" "+*.rust-lang.org/**/*.css" "+*.rust-lang.org/**/*.js" "+*.rust-lang.org/**/*.map.js" "+*.rust-lang.org/**/*.map.css" "+*.rust-lang.org/**/*.woff" "+*.rust-lang.org/**/*.woff2"
+
+httrack https://doc.rust-lang.org/stable/reference/ -O ~/documentation-files/rust-reference "+*.rust-lang.org/**/*.html" "+*.rust-lang.org/**/*.css" "+*.rust-lang.org/**/*.js" "+*.rust-lang.org/**/*.map.js" "+*.rust-lang.org/**/*.map.css" "+*.rust-lang.org/**/*.woff" "+*.rust-lang.org/**/*.woff2"
+
+...
+```
 
 ## How I use it
 
