@@ -40,4 +40,5 @@ this could probably work better, but I'm tired and will revisit this later
 
 - make it look to a external file so it can be generic
 - add options for tweaking the settings
+- make sure the correct filters are being used (it looks like they are, but triple check would be useful to not waste resources downloading rubbish)
 - tidy everything up
