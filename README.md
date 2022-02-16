@@ -2,7 +2,7 @@
 
 I wrote this late at night to make life a bit easier. It needs more work to make it suitable to other cases than mine.
 
-Overall what this does is: generate a bunch of ready to be used httrack commands, according to the sites you placed on the "sites" object. By default it will only download files needed to render the page (html, js, fonts, maps) and look traverse at max only to the subdomains of the site domain.
+Overall what this does is: generate a bunch of ready to be used httrack commands, according to the sites you placed on the "sites" object. By default it will only download files needed to render the page (html, js, fonts, maps) and traverse at max only to the subdomains of the site domain.
 
 # Motivation
 
